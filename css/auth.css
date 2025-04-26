@@ -1,0 +1,256 @@
+/* 
+* BreakNews - Новостной портал
+* Стили страницы авторизации/регистрации
+*/
+
+.auth {
+    padding: var(--space-6) 0;
+}
+
+.auth__wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color var(--transition-normal);
+}
+
+/* Табы */
+.auth__tabs {
+    display: flex;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.auth__tab {
+    flex: 1;
+    padding: var(--space-3) 0;
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.auth__tab:hover {
+    color: var(--text-primary);
+}
+
+.auth__tab--active {
+    color: var(--primary-color);
+}
+
+.auth__tab--active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/* Формы */
+.auth__content {
+    padding: var(--space-4);
+}
+
+.auth__form-wrapper {
+    display: none;
+}
+
+.auth__form-wrapper--active {
+    display: block;
+}
+
+.auth__form {
+    margin-bottom: var(--space-4);
+}
+
+.form-group {
+    margin-bottom: var(--space-3);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--divider-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    background-color: var(--background-gray);
+    color: var(--text-primary);
+    transition: border-color var(--transition-fast), background-color var(--transition-normal);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group--inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-error {
+    display: block;
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: var(--space-1);
+    min-height: 18px;
+}
+
+/* Поле пароля */
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: var(--space-3);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: var(--text-primary);
+}
+
+/* Чекбокс */
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: var(--space-2);
+}
+
+.checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.checkbox label a {
+    color: var(--primary-color);
+    transition: color var(--transition-fast);
+}
+
+.checkbox label a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Ссылка */
+.auth__link {
+    color: var(--primary-color);
+    font-size: 0.9375rem;
+    transition: color var(--transition-fast);
+}
+
+.auth__link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Социальные кнопки */
+.auth__social-divider {
+    position: relative;
+    text-align: center;
+    margin: var(--space-4) 0;
+}
+
+.auth__social-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--divider-color);
+}
+
+.auth__social-divider span {
+    position: relative;
+    display: inline-block;
+    padding: 0 var(--space-2);
+    background-color: var(--background-light);
+    color: var(--text-tertiary);
+    font-size: 0.9375rem;
+    transition: background-color var(--transition-normal);
+}
+
+.auth__social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2);
+    border-radius: var(--border-radius-sm);
+    color: #ffffff;
+    font-weight: 500;
+    transition: opacity var(--transition-fast);
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.social-btn i {
+    margin-right: var(--space-2);
+    font-size: 1.25rem;
+}
+
+.social-btn--vk {
+    background-color: #4a76a8;
+}
+
+.social-btn--google {
+    background-color: #db4437;
+}
+
+/* Адаптивность */
+@media (max-width: 576px) {
+    .auth__wrapper {
+        box-shadow: none;
+    }
+    
+    .form-group--inline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .auth__link {
+        margin-top: var(--space-2);
+    }
+}

@@ -1,0 +1,305 @@
+/* 
+* BreakNews - Новостной портал
+* Стили страницы контактов
+*/
+
+/* ===== Шапка страницы ===== */
+.page-header {
+    background-color: var(--primary-color);
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-5);
+}
+
+.page-header__title {
+    color: #ffffff;
+    margin-bottom: var(--space-2);
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+}
+
+.breadcrumbs a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+    color: #ffffff;
+}
+
+.breadcrumbs__separator {
+    margin: 0 var(--space-2);
+}
+
+/* ===== Контакты ===== */
+.contact {
+    padding-bottom: var(--space-6);
+}
+
+.contact__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+}
+
+/* Детали контактов */
+.contact-details {
+    margin-bottom: var(--space-4);
+}
+
+.contact-detail {
+    display: flex;
+    margin-bottom: var(--space-3);
+}
+
+.contact-detail__icon {
+    flex: 0 0 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    margin-right: var(--space-3);
+}
+
+.contact-detail__title {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-1);
+}
+
+.contact-detail__text {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-1);
+}
+
+.contact-detail__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Социальные сети */
+.contact-social {
+    margin-bottom: var(--space-4);
+}
+
+.contact-social__title {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-3);
+}
+
+.contact-social__links {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.contact-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-gray);
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    transition: all var(--transition-fast);
+}
+
+.contact-social__link:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Форма контактов */
+.contact__form-wrapper {
+    background-color: var(--background-light);
+    padding: var(--space-4);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--transition-normal);
+}
+
+.contact-form .form-group {
+    margin-bottom: var(--space-3);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-weight: 500;
+}
+
+.required {
+    color: var(--error-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--divider-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    background-color: var(--background-gray);
+    color: var(--text-primary);
+    transition: border-color var(--transition-fast), background-color var(--transition-normal);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.form-error {
+    display: block;
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: var(--space-1);
+    min-height: 18px;
+}
+
+/* Чекбокс */
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: var(--space-2);
+}
+
+.checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.checkbox label a {
+    color: var(--primary-color);
+    transition: color var(--transition-fast);
+}
+
+.checkbox label a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* ===== Карта ===== */
+.map-section {
+    padding-bottom: var(--space-6);
+}
+
+.map-wrapper {
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FAQ ===== */
+.faq-section {
+    padding-bottom: var(--space-6);
+}
+
+.faq-list {
+    margin-top: var(--space-4);
+}
+
+.faq-item {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--space-3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: background-color var(--transition-normal);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3);
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: transform var(--transition-fast);
+}
+
+.faq-toggle .fa-minus {
+    display: none;
+}
+
+.faq-item.active .faq-toggle .fa-plus {
+    display: none;
+}
+
+.faq-item.active .faq-toggle .fa-minus {
+    display: block;
+}
+
+.faq-answer {
+    padding: 0 var(--space-3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal), padding-bottom var(--transition-normal);
+}
+
+.faq-item.active .faq-answer {
+    padding-bottom: var(--space-3);
+    max-height: 1000px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 992px) {
+    .contact__layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+    
+    .contact__info {
+        order: 2;
+    }
+    
+    .contact__form-wrapper {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,356 @@
+/* 
+* BreakNews - Новостной портал
+* Стили страницы "О нас"
+*/
+
+/* ===== Шапка страницы ===== */
+.page-header {
+    background-color: var(--primary-color);
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-5);
+}
+
+.page-header__title {
+    color: #ffffff;
+    margin-bottom: var(--space-2);
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+}
+
+.breadcrumbs a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+    color: #ffffff;
+}
+
+.breadcrumbs__separator {
+    margin: 0 var(--space-2);
+}
+
+/* ===== Интро ===== */
+.about-intro {
+    padding-bottom: var(--space-6);
+}
+
+.about-intro__content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--space-5);
+    align-items: center;
+}
+
+.about-intro__lead {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--space-3);
+}
+
+.about-intro__image {
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.about-intro__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== Ценности ===== */
+.about-values {
+    padding: var(--space-6) 0;
+    background-color: var(--background-light);
+    transition: background-color var(--transition-normal);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.value-card {
+    text-align: center;
+    padding: var(--space-4);
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-gray);
+    transition: transform var(--transition-fast), background-color var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+.value-card__icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    margin: 0 auto var(--space-3);
+}
+
+.value-card__title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+}
+
+.value-card__description {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+}
+
+/* ===== История ===== */
+.about-history {
+    padding: var(--space-6) 0;
+}
+
+.timeline {
+    margin-top: var(--space-5);
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 2px;
+    background-color: var(--divider-color);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: var(--space-5);
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item__date {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: var(--space-4);
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding-top: var(--space-1);
+}
+
+.timeline-item__content {
+    flex: 1;
+    padding-left: var(--space-5);
+}
+
+.timeline-item__title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+}
+
+.timeline-item__description {
+    color: var(--text-secondary);
+}
+
+/* ===== Команда ===== */
+.about-team {
+    padding: var(--space-6) 0;
+    background-color: var(--background-light);
+    transition: background-color var(--transition-normal);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.team-member {
+    text-align: center;
+    padding: var(--space-3);
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-gray);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-normal);
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.team-member__image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto var(--space-3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member__name {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-1);
+}
+
+.team-member__position {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: var(--space-2);
+}
+
+.team-member__bio {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    margin-bottom: var(--space-3);
+}
+
+.team-member__social {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+.team-member__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--background-light);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast), background-color var(--transition-normal);
+}
+
+.team-member__social a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* ===== CTA ===== */
+.about-cta {
+    padding: var(--space-6) 0;
+}
+
+.cta {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-5);
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta__title {
+    font-size: 2rem;
+    margin-bottom: var(--space-3);
+    color: #ffffff;
+}
+
+.cta__text {
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto var(--space-4);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta .btn--primary {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cta .btn--primary:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 1200px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .about-intro__content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-intro__image {
+        order: -1;
+        margin-bottom: var(--space-4);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 80px;
+    }
+    
+    .timeline-item::after {
+        left: 80px;
+    }
+    
+    .timeline-item__date {
+        flex: 0 0 60px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta__title {
+        font-size: 1.5rem;
+    }
+    
+    .cta__text {
+        font-size: 1rem;
+    }
+}
