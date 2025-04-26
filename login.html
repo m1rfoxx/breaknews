@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakNews - Вход</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html">Главная</a></li>
+                        <li class="nav__item"><a href="category.html?category=politics">Политика</a></li>
+                        <li class="nav__item"><a href="category.html?category=tech">Технологии</a></li>
+                        <li class="nav__item"><a href="category.html?category=sport">Спорт</a></li>
+                        <li class="nav__item"><a href="about.html">О нас</a></li>
+                        <li class="nav__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="theme-toggle" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn--outline">Войти</a>
+                    <button class="burger-menu" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="auth">
+                <div class="container">
+                    <div class="auth__wrapper">
+                        <div class="auth__tabs">
+                            <button class="auth__tab auth__tab--active" data-tab="login">Вход</button>
+                            <button class="auth__tab" data-tab="register">Регистрация</button>
+                        </div>
+                        
+                        <div class="auth__content">
+                            <div class="auth__form-wrapper auth__form-wrapper--active" id="login-form">
+                                <form class="auth__form">
+                                    <div class="form-group">
+                                        <label for="login-email">Email</label>
+                                        <input type="email" id="login-email" placeholder="Ваш email" required>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="login-password">Пароль</label>
+                                        <div class="password-field">
+                                            <input type="password" id="login-password" placeholder="Ваш пароль" required>
+                                            <button type="button" class="password-toggle" tabindex="-1">
+                                                <i class="far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group form-group--inline">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="remember-me">
+                                            <label for="remember-me">Запомнить меня</label>
+                                        </div>
+                                        <a href="#" class="auth__link">Забыли пароль?</a>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn--primary btn--block">Войти</button>
+                                </form>
+                                
+                                <div class="auth__social">
+                                    <div class="auth__social-divider">
+                                        <span>Или войдите через</span>
+                                    </div>
+                                    <div class="auth__social-buttons">
+                                        <a href="#" class="social-btn social-btn--vk">
+                                            <i class="fab fa-vk"></i>
+                                            <span>ВКонтакте</span>
+                                        </a>
+                                        <a href="#" class="social-btn social-btn--google">
+                                            <i class="fab fa-google"></i>
+                                            <span>Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="auth__form-wrapper" id="register-form">
+                                <form class="auth__form">
+                                    <div class="form-group">
+                                        <label for="register-name">Имя</label>
+                                        <input type="text" id="register-name" placeholder="Ваше имя" required>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="register-email">Email</label>
+                                        <input type="email" id="register-email" placeholder="Ваш email" required>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="register-password">Пароль</label>
+                                        <div class="password-field">
+                                            <input type="password" id="register-password" placeholder="Создайте пароль" required>
+                                            <button type="button" class="password-toggle" tabindex="-1">
+                                                <i class="far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="register-password-confirm">Подтверждение пароля</label>
+                                        <div class="password-field">
+                                            <input type="password" id="register-password-confirm" placeholder="Повторите пароль" required>
+                                            <button type="button" class="password-toggle" tabindex="-1">
+                                                <i class="far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="agree-terms" required>
+                                            <label for="agree-terms">Я согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></label>
+                                        </div>
+                                        <span class="form-error"></span>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn--primary btn--block">Зарегистрироваться</button>
+                                </form>
+                                
+                                <div class="auth__social">
+                                    <div class="auth__social-divider">
+                                        <span>Или зарегистрируйтесь через</span>
+                                    </div>
+                                    <div class="auth__social-buttons">
+                                        <a href="#" class="social-btn social-btn--vk">
+                                            <i class="fab fa-vk"></i>
+                                            <span>ВКонтакте</span>
+                                        </a>
+                                        <a href="#" class="social-btn social-btn--google">
+                                            <i class="fab fa-google"></i>
+                                            <span>Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo">Break<span>News</span></a>
+                        </div>
+                        <p class="footer__description">BreakNews - актуальные новости и аналитика событий в России и мире. Наша цель - предоставлять точную и объективную информацию.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Рубрики</h3>
+                        <ul class="footer__links">
+                            <li><a href="category.html?category=politics">Политика</a></li>
+                            <li><a href="category.html?category=tech">Технологии</a></li>
+                            <li><a href="category.html?category=sport">Спорт</a></li>
+                            <li><a href="category.html?category=economics">Экономика</a></li>
+                            <li><a href="category.html?category=culture">Культура</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">О нас</h3>
+                        <ul class="footer__links">
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="about.html#team">Наша команда</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="#">Рекламодателям</a></li>
+                            <li><a href="#">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <ul class="footer__contacts">
+                            <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, д. 10</li>
+                            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                            <li><i class="fas fa-envelope"></i> info@breaknews.ru</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 BreakNews. Все права защищены.</p>
+                    <div class="footer__links footer__links--inline">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                <button class="mobile-menu__close" aria-label="Закрыть меню">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=politics">Политика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=tech">Технологии</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=sport">Спорт</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=economics">Экономика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=culture">Культура</a></li>
+                    <li class="mobile-menu__item"><a href="about.html">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__actions">
+                <a href="login.html" class="btn btn--outline btn--block">Войти</a>
+                <div class="mobile-menu__theme">
+                    <span>Тема:</span>
+                    <button class="theme-toggle theme-toggle--mobile" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="overlay"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

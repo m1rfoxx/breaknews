@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakNews - Главные новости</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--active"><a href="index.html">Главная</a></li>
+                        <li class="nav__item"><a href="category.html?category=politics">Политика</a></li>
+                        <li class="nav__item"><a href="category.html?category=tech">Технологии</a></li>
+                        <li class="nav__item"><a href="category.html?category=sport">Спорт</a></li>
+                        <li class="nav__item"><a href="about.html">О нас</a></li>
+                        <li class="nav__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="theme-toggle" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn--outline">Войти</a>
+                    <button class="burger-menu" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Главная секция -->
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__featured">
+                            <article class="featured-news">
+                                <div class="featured-news__image">
+                                    <img src="https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Важная новость" loading="lazy">
+                                    <span class="news-category news-category--politics">Политика</span>
+                                </div>
+                                <div class="featured-news__content">
+                                    <h2 class="featured-news__title"><a href="article.html?id=1">Важные переговоры между лидерами стран состоятся в следующем месяце</a></h2>
+                                    <p class="featured-news__excerpt">Встреча лидеров крупнейших государств мира запланирована на следующий месяц. Эксперты ожидают подписания новых соглашений...</p>
+                                    <div class="news-meta">
+                                        <span class="news-meta__author">Алексей Иванов</span>
+                                        <span class="news-meta__date">20 июля 2025</span>
+                                        <span class="news-meta__comments"><i class="fas fa-comment"></i> 24</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="hero__secondary">
+                            <article class="news-card news-card--small">
+                                <div class="news-card__image">
+                                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Новость технологии" loading="lazy">
+                                    <span class="news-category news-category--tech">Технологии</span>
+                                </div>
+                                <div class="news-card__content">
+                                    <h3 class="news-card__title"><a href="article.html?id=2">Новый искусственный интеллект превзошёл человека в решении сложных задач</a></h3>
+                                    <div class="news-meta">
+                                        <span class="news-meta__date">19 июля 2025</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-card news-card--small">
+                                <div class="news-card__image">
+                                    <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Новость спорта" loading="lazy">
+                                    <span class="news-category news-category--sport">Спорт</span>
+                                </div>
+                                <div class="news-card__content">
+                                    <h3 class="news-card__title"><a href="article.html?id=3">Сборная России по футболу одержала важную победу в отборочном турнире</a></h3>
+                                    <div class="news-meta">
+                                        <span class="news-meta__date">18 июля 2025</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest-news">
+                <div class="container">
+                    <h2 class="section-title">Последние новости</h2>
+                    
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/7234263/pexels-photo-7234263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Экономические новости" loading="lazy">
+                                <span class="news-category news-category--economics">Экономика</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=4">Центральный банк снизил ключевую ставку на полпроцента</a></h3>
+                                <p class="news-card__excerpt">Решение регулятора оказалось неожиданным для большинства аналитиков, ожидавших сохранения текущих параметров...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Мария Петрова</span>
+                                    <span class="news-meta__date">17 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 14</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Культурные новости" loading="lazy">
+                                <span class="news-category news-category--culture">Культура</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=5">Открытие нового выставочного центра современного искусства</a></h3>
+                                <p class="news-card__excerpt">Масштабный культурный проект объединил работы более сотни современных российских художников под одной крышей...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Екатерина Смирнова</span>
+                                    <span class="news-meta__date">16 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 8</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Образование" loading="lazy">
+                                <span class="news-category news-category--education">Образование</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=6">Министерство образования представило новую программу цифрового обучения</a></h3>
+                                <p class="news-card__excerpt">Инновационная образовательная платформа будет внедрена во всех российских школах к началу следующего учебного года...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Павел Николаев</span>
+                                    <span class="news-meta__date">15 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 19</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Здоровье" loading="lazy">
+                                <span class="news-category news-category--health">Здоровье</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=7">Учёные разработали новый метод ранней диагностики заболеваний</a></h3>
+                                <p class="news-card__excerpt">Революционная методика позволяет выявлять риски серьезных заболеваний на ранних стадиях с точностью до 95%...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Анна Козлова</span>
+                                    <span class="news-meta__date">14 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 27</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Автомобили" loading="lazy">
+                                <span class="news-category news-category--auto">Авто</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=8">Российский автопром представил новый электромобиль отечественного производства</a></h3>
+                                <p class="news-card__excerpt">Первый серийный российский электромобиль будет доступен для предзаказа уже с августа этого года...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Сергей Морозов</span>
+                                    <span class="news-meta__date">13 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 31</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-card__image">
+                                <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Недвижимость" loading="lazy">
+                                <span class="news-category news-category--realty">Недвижимость</span>
+                            </div>
+                            <div class="news-card__content">
+                                <h3 class="news-card__title"><a href="article.html?id=9">Новая программа льготной ипотеки для молодых семей стартует осенью</a></h3>
+                                <p class="news-card__excerpt">Правительство утвердило расширенные условия для получения льготной ипотеки молодыми семьями с детьми...</p>
+                                <div class="news-meta">
+                                    <span class="news-meta__author">Ольга Белова</span>
+                                    <span class="news-meta__date">12 июля 2025</span>
+                                    <span class="news-meta__comments"><i class="fas fa-comment"></i> 16</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="load-more">
+                        <button class="btn btn--primary">Загрузить ещё</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe__content">
+                            <h2>Подпишитесь на нашу рассылку</h2>
+                            <p>Получайте самые важные новости каждый день на свою почту</p>
+                        </div>
+                        <form class="subscribe__form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn--primary">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo">Break<span>News</span></a>
+                        </div>
+                        <p class="footer__description">BreakNews - актуальные новости и аналитика событий в России и мире. Наша цель - предоставлять точную и объективную информацию.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Рубрики</h3>
+                        <ul class="footer__links">
+                            <li><a href="category.html?category=politics">Политика</a></li>
+                            <li><a href="category.html?category=tech">Технологии</a></li>
+                            <li><a href="category.html?category=sport">Спорт</a></li>
+                            <li><a href="category.html?category=economics">Экономика</a></li>
+                            <li><a href="category.html?category=culture">Культура</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">О нас</h3>
+                        <ul class="footer__links">
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="about.html#team">Наша команда</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="#">Рекламодателям</a></li>
+                            <li><a href="#">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <ul class="footer__contacts">
+                            <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, д. 10</li>
+                            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                            <li><i class="fas fa-envelope"></i> info@breaknews.ru</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 BreakNews. Все права защищены.</p>
+                    <div class="footer__links footer__links--inline">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                <button class="mobile-menu__close" aria-label="Закрыть меню">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item mobile-menu__item--active"><a href="index.html">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=politics">Политика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=tech">Технологии</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=sport">Спорт</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=economics">Экономика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=culture">Культура</a></li>
+                    <li class="mobile-menu__item"><a href="about.html">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__actions">
+                <a href="login.html" class="btn btn--outline btn--block">Войти</a>
+                <div class="mobile-menu__theme">
+                    <span>Тема:</span>
+                    <button class="theme-toggle theme-toggle--mobile" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="overlay"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

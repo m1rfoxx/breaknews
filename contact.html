@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakNews - Контакты</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html">Главная</a></li>
+                        <li class="nav__item"><a href="category.html?category=politics">Политика</a></li>
+                        <li class="nav__item"><a href="category.html?category=tech">Технологии</a></li>
+                        <li class="nav__item"><a href="category.html?category=sport">Спорт</a></li>
+                        <li class="nav__item"><a href="about.html">О нас</a></li>
+                        <li class="nav__item nav__item--active"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="theme-toggle" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn--outline">Войти</a>
+                    <button class="burger-menu" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-header__title">Контакты</h1>
+                    <div class="breadcrumbs">
+                        <a href="index.html">Главная</a>
+                        <span class="breadcrumbs__separator">></span>
+                        <span>Контакты</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__layout">
+                        <div class="contact__info">
+                            <h2 class="section-title">Как с нами связаться</h2>
+                            
+                            <div class="contact-details">
+                                <div class="contact-detail">
+                                    <div class="contact-detail__icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-detail__content">
+                                        <h3 class="contact-detail__title">Адрес</h3>
+                                        <p class="contact-detail__text">г. Москва, ул. Пушкина, д. 10, офис 312</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="contact-detail__icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-detail__content">
+                                        <h3 class="contact-detail__title">Телефон</h3>
+                                        <p class="contact-detail__text">+7 (495) 123-45-67</p>
+                                        <p class="contact-detail__text">+7 (495) 987-65-43</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="contact-detail__icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-detail__content">
+                                        <h3 class="contact-detail__title">Email</h3>
+                                        <p class="contact-detail__text">info@breaknews.ru</p>
+                                        <p class="contact-detail__text">pr@breaknews.ru</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="contact-detail__icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="contact-detail__content">
+                                        <h3 class="contact-detail__title">Время работы</h3>
+                                        <p class="contact-detail__text">Пн-Пт: 9:00 - 18:00</p>
+                                        <p class="contact-detail__text">Сб-Вс: Выходной</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social">
+                                <h3 class="contact-social__title">Мы в социальных сетях</h3>
+                                <div class="contact-social__links">
+                                    <a href="#" class="contact-social__link" aria-label="ВКонтакте">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                    <a href="#" class="contact-social__link" aria-label="Телеграм">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="#" class="contact-social__link" aria-label="Одноклассники">
+                                        <i class="fab fa-odnoklassniki"></i>
+                                    </a>
+                                    <a href="#" class="contact-social__link" aria-label="YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__form-wrapper">
+                            <h2 class="section-title">Напишите нам</h2>
+                            
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Ваше имя <span class="required">*</span></label>
+                                    <input type="text" id="name" placeholder="Введите ваше имя" required>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" placeholder="Введите ваш email" required>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Тема <span class="required">*</span></label>
+                                    <input type="text" id="subject" placeholder="Введите тему сообщения" required>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Сообщение <span class="required">*</span></label>
+                                    <textarea id="message" rows="6" placeholder="Введите ваше сообщение" required></textarea>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="agree-privacy" required>
+                                        <label for="agree-privacy">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                                    </div>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn--primary">Отправить сообщение</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="map-section">
+                <div class="container">
+                    <h2 class="section-title">Наше расположение</h2>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3901054180315!2d37.61887921592844!3d55.757198180556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1622296440471!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <div class="container">
+                    <h2 class="section-title">Часто задаваемые вопросы</h2>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Как предложить новость для публикации?</h3>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Если у вас есть интересная новость или информация для публикации, вы можете отправить её нам через форму обратной связи с указанием темы "Предложить новость" или по электронной почте info@breaknews.ru. Наши редакторы рассмотрят ваше предложение и свяжутся с вами при необходимости.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Как разместить рекламу на сайте?</h3>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Для размещения рекламы на нашем сайте, пожалуйста, свяжитесь с нашим отделом рекламы по электронной почте pr@breaknews.ru или по телефону +7 (495) 987-65-43. Мы предлагаем различные форматы размещения и индивидуальные условия сотрудничества.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Могу ли я стать автором для BreakNews?</h3>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, мы всегда открыты для сотрудничества с талантливыми авторами. Если вы хотите стать частью нашей команды или публиковать материалы на нашем сайте, отправьте ваше резюме и примеры работ на адрес hr@breaknews.ru с темой "Вакансия автора". Мы рассмотрим ваши материалы и свяжемся с вами при наличии подходящих возможностей для сотрудничества.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Как подписаться на рассылку новостей?</h3>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Вы можете подписаться на нашу рассылку новостей, введя свой email в форму подписки в нижней части главной страницы или в соответствующем блоке в боковой панели. После подтверждения подписки вы будете получать ежедневные или еженедельные новостные дайджесты (в зависимости от выбранной частоты) на указанный email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Как сообщить об ошибке в статье?</h3>
+                                <button class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Если вы обнаружили ошибку или неточность в нашей статье, пожалуйста, сообщите нам об этом через форму обратной связи на этой странице, указав в теме "Сообщить об ошибке", или напишите на почту info@breaknews.ru. Укажите в сообщении ссылку на статью и описание обнаруженной ошибки. Мы ценим внимательность наших читателей и стремимся оперативно исправлять неточности.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo">Break<span>News</span></a>
+                        </div>
+                        <p class="footer__description">BreakNews - актуальные новости и аналитика событий в России и мире. Наша цель - предоставлять точную и объективную информацию.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Рубрики</h3>
+                        <ul class="footer__links">
+                            <li><a href="category.html?category=politics">Политика</a></li>
+                            <li><a href="category.html?category=tech">Технологии</a></li>
+                            <li><a href="category.html?category=sport">Спорт</a></li>
+                            <li><a href="category.html?category=economics">Экономика</a></li>
+                            <li><a href="category.html?category=culture">Культура</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">О нас</h3>
+                        <ul class="footer__links">
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="about.html#team">Наша команда</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="#">Рекламодателям</a></li>
+                            <li><a href="#">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <ul class="footer__contacts">
+                            <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, д. 10</li>
+                            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                            <li><i class="fas fa-envelope"></i> info@breaknews.ru</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 BreakNews. Все права защищены.</p>
+                    <div class="footer__links footer__links--inline">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                <button class="mobile-menu__close" aria-label="Закрыть меню">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=politics">Политика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=tech">Технологии</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=sport">Спорт</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=economics">Экономика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=culture">Культура</a></li>
+                    <li class="mobile-menu__item"><a href="about.html">О нас</a></li>
+                    <li class="mobile-menu__item mobile-menu__item--active"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__actions">
+                <a href="login.html" class="btn btn--outline btn--block">Войти</a>
+                <div class="mobile-menu__theme">
+                    <span>Тема:</span>
+                    <button class="theme-toggle theme-toggle--mobile" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="overlay"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

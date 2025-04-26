@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakNews - О нас</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html">Главная</a></li>
+                        <li class="nav__item"><a href="category.html?category=politics">Политика</a></li>
+                        <li class="nav__item"><a href="category.html?category=tech">Технологии</a></li>
+                        <li class="nav__item"><a href="category.html?category=sport">Спорт</a></li>
+                        <li class="nav__item nav__item--active"><a href="about.html">О нас</a></li>
+                        <li class="nav__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="theme-toggle" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn--outline">Войти</a>
+                    <button class="burger-menu" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-header__title">О нас</h1>
+                    <div class="breadcrumbs">
+                        <a href="index.html">Главная</a>
+                        <span class="breadcrumbs__separator">></span>
+                        <span>О нас</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-intro">
+                <div class="container">
+                    <div class="about-intro__content">
+                        <div class="about-intro__text">
+                            <h2 class="section-title">Наша миссия</h2>
+                            <p class="about-intro__lead">BreakNews – это информационный портал, созданный для тех, кто ценит объективную и своевременную информацию о событиях в России и мире.</p>
+                            <p>Мы считаем, что качественная журналистика – основа гражданского общества и демократии. Наша миссия заключается в предоставлении читателям достоверной информации, которая помогает формировать собственное мнение о происходящих событиях.</p>
+                            <p>Команда BreakNews состоит из профессиональных журналистов, редакторов и аналитиков, которые работают 24/7, чтобы оперативно освещать события, важные для нашей аудитории.</p>
+                            <p>Мы стремимся соблюдать высокие стандарты журналистской этики, уважать право читателей на получение объективной информации и обеспечивать разнообразие мнений.</p>
+                        </div>
+                        <div class="about-intro__image">
+                            <img src="https://images.pexels.com/photos/3153204/pexels-photo-3153204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Редакция BreakNews">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-values">
+                <div class="container">
+                    <h2 class="section-title">Наши ценности</h2>
+                    
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-card__icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="value-card__title">Объективность</h3>
+                            <p class="value-card__description">Мы представляем разные точки зрения и отделяем факты от мнений, чтобы наши читатели могли сформировать собственную позицию.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-card__icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="value-card__title">Оперативность</h3>
+                            <p class="value-card__description">Мы работаем круглосуточно, чтобы предоставлять актуальную информацию о важнейших событиях в кратчайшие сроки.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-card__icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="value-card__title">Достоверность</h3>
+                            <p class="value-card__description">Мы тщательно проверяем информацию и используем только надежные источники, чтобы гарантировать точность наших материалов.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-card__icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3 class="value-card__title">Диалог</h3>
+                            <p class="value-card__description">Мы создаем площадку для обсуждения важных тем и поощряем конструктивный обмен мнениями между нашими читателями.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-history">
+                <div class="container">
+                    <h2 class="section-title">Наша история</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-item__date">2019</div>
+                            <div class="timeline-item__content">
+                                <h3 class="timeline-item__title">Основание</h3>
+                                <p class="timeline-item__description">BreakNews начинается как небольшой новостной блог, созданный группой энтузиастов-журналистов, стремящихся к объективному освещению событий.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-item__date">2020</div>
+                            <div class="timeline-item__content">
+                                <h3 class="timeline-item__title">Рост и развитие</h3>
+                                <p class="timeline-item__description">Проект привлекает внимание аудитории и инвесторов. Формируется профессиональная редакция, расширяется охват тем и география новостей.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-item__date">2021</div>
+                            <div class="timeline-item__content">
+                                <h3 class="timeline-item__title">Запуск полноценного портала</h3>
+                                <p class="timeline-item__description">BreakNews трансформируется в современный новостной портал с удобным дизайном, разнообразными рубриками и интерактивными возможностями.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-item__date">2023</div>
+                            <div class="timeline-item__content">
+                                <h3 class="timeline-item__title">Технологический прорыв</h3>
+                                <p class="timeline-item__description">Внедрение передовых технологий для улучшения пользовательского опыта: персонализированная лента новостей, мобильное приложение, инновационные форматы подачи контента.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-item__date">2025</div>
+                            <div class="timeline-item__content">
+                                <h3 class="timeline-item__title">Сегодня</h3>
+                                <p class="timeline-item__description">BreakNews – один из ведущих новостных ресурсов с ежедневной аудиторией более 500 000 человек, командой профессионалов и репутацией надежного источника информации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-team" id="team">
+                <div class="container">
+                    <h2 class="section-title">Наша команда</h2>
+                    
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Александр Петров">
+                            </div>
+                            <h3 class="team-member__name">Александр Петров</h3>
+                            <p class="team-member__position">Главный редактор</p>
+                            <p class="team-member__bio">Более 15 лет в журналистике. Ранее работал в ведущих российских и международных изданиях. Лауреат премии "Золотое перо".</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Екатерина Смирнова">
+                            </div>
+                            <h3 class="team-member__name">Екатерина Смирнова</h3>
+                            <p class="team-member__position">Заместитель главного редактора</p>
+                            <p class="team-member__bio">Специализируется на политической журналистике. Автор аналитических материалов и специальных репортажей из горячих точек.</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Дмитрий Козлов">
+                            </div>
+                            <h3 class="team-member__name">Дмитрий Козлов</h3>
+                            <p class="team-member__position">Руководитель отдела технологий</p>
+                            <p class="team-member__bio">Эксперт в области цифровых технологий и инноваций. Автор популярных обзоров новинок и аналитических материалов о тенденциях рынка.</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/3760819/pexels-photo-3760819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Ольга Иванова">
+                            </div>
+                            <h3 class="team-member__name">Ольга Иванова</h3>
+                            <p class="team-member__position">Руководитель отдела экономики</p>
+                            <p class="team-member__bio">Финансовый аналитик с опытом работы в крупных банках. Специализируется на макроэкономике и финансовых рынках.</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Антон Соколов">
+                            </div>
+                            <h3 class="team-member__name">Антон Соколов</h3>
+                            <p class="team-member__position">Спортивный обозреватель</p>
+                            <p class="team-member__bio">Освещает крупнейшие спортивные события. Автор эксклюзивных интервью со спортсменами и аналитических материалов о мире спорта.</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="team-member__image">
+                                <img src="https://images.pexels.com/photos/3757004/pexels-photo-3757004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Наталья Волкова">
+                            </div>
+                            <h3 class="team-member__name">Наталья Волкова</h3>
+                            <p class="team-member__position">Редактор отдела культуры</p>
+                            <p class="team-member__bio">Искусствовед, кинокритик. Автор рецензий на премьеры, обзоров выставок и интервью с деятелями культуры.</p>
+                            <div class="team-member__social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-cta">
+                <div class="container">
+                    <div class="cta">
+                        <div class="cta__content">
+                            <h2 class="cta__title">Присоединяйтесь к нашей команде!</h2>
+                            <p class="cta__text">Мы всегда в поиске талантливых журналистов, редакторов, фотографов и IT-специалистов. Отправьте нам ваше резюме, и мы свяжемся с вами при наличии подходящих вакансий.</p>
+                            <a href="contact.html" class="btn btn--primary">Связаться с нами</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo">Break<span>News</span></a>
+                        </div>
+                        <p class="footer__description">BreakNews - актуальные новости и аналитика событий в России и мире. Наша цель - предоставлять точную и объективную информацию.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Рубрики</h3>
+                        <ul class="footer__links">
+                            <li><a href="category.html?category=politics">Политика</a></li>
+                            <li><a href="category.html?category=tech">Технологии</a></li>
+                            <li><a href="category.html?category=sport">Спорт</a></li>
+                            <li><a href="category.html?category=economics">Экономика</a></li>
+                            <li><a href="category.html?category=culture">Культура</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">О нас</h3>
+                        <ul class="footer__links">
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="about.html#team">Наша команда</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="#">Рекламодателям</a></li>
+                            <li><a href="#">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <ul class="footer__contacts">
+                            <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, д. 10</li>
+                            <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                            <li><i class="fas fa-envelope"></i> info@breaknews.ru</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 BreakNews. Все права защищены.</p>
+                    <div class="footer__links footer__links--inline">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__logo">
+                    <a href="index.html" class="logo">Break<span>News</span></a>
+                </div>
+                <button class="mobile-menu__close" aria-label="Закрыть меню">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="index.html">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=politics">Политика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=tech">Технологии</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=sport">Спорт</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=economics">Экономика</a></li>
+                    <li class="mobile-menu__item"><a href="category.html?category=culture">Культура</a></li>
+                    <li class="mobile-menu__item mobile-menu__item--active"><a href="about.html">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__actions">
+                <a href="login.html" class="btn btn--outline btn--block">Войти</a>
+                <div class="mobile-menu__theme">
+                    <span>Тема:</span>
+                    <button class="theme-toggle theme-toggle--mobile" aria-label="Переключить тему">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="overlay"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
